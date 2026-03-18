@@ -1,0 +1,26 @@
+GET http://localhost:5163/games/4
+
+###
+POST http://localhost:5163/games
+Content-Type: application/json
+
+{
+  "name": "Cyberpunk 2077",
+  "genre": "Action-adventure",
+  "price": 59.99,
+  "releaseDate": "2020-12-10"
+}
+
+###
+PUT http://localhost:5163/games/1
+Content-Type: application/json
+
+{
+  "name": "Cyberpunk 2077",
+  "genre": "Action-adventure",
+  "price": 59.99,
+  "releaseDate": "2020-12-10"
+}
+
+###
+DELETE http://localhost:5163/games/2
